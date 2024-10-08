@@ -5,20 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link rel="stylesheet" href="3style.css">
-    
-    <style>
-       
-    </style>
+    <a href="Obrigado.html"></a>
 </head>
 <body>
+
     
     <header>
         <h1>Formulário de Feedback</h1>
     </header>
     <div id="container">
         <p>Como podemos melhorar sua experiência conosco?</p>
-        <textarea placeholder="Digite sua resposta aqui..."></textarea>
-        <button type="submit">Enviar</button>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label for="e-mail"></label>
+        <textarea name="message"  cols="30" rows="10" placeholder="Digite sua reposta aqui..."></textarea>
+        
+
+        <input type="hidden" name="accessKey" value="02a7bbfc-1a4f-4716-9d49-4b634f54ca5d">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:3000/.vscode/Nave/Nave.html">
+        <input type="text" name="honeypot" style="display: none;">
+            
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
